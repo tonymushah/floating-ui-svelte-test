@@ -22,7 +22,7 @@
     My Button
   </button>
   <div id="button-tooltip" class:tooltip role="tooltip" bind:this={tooltip}>
-    My tooltip
+    My tooltip with more content
   </div>
 </main>
 
