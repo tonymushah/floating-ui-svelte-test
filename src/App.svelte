@@ -1,5 +1,5 @@
 <script lang="ts">
-  import { flip } from "@floating-ui/dom";
+  import { flip, offset } from "@floating-ui/dom";
   import { shift } from "@floating-ui/dom";
   import { computePosition } from "@floating-ui/dom";
   import "@fontsource/poppins/devanagari.css";
@@ -14,6 +14,7 @@
         shift({
           padding: 5,
         }),
+        offset(6),
       ],
     });
     Object.assign(tooltip.style, {
