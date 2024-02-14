@@ -6,6 +6,7 @@
   import { onMount } from "svelte";
   let button: HTMLButtonElement;
   let tooltip: HTMLDivElement;
+  let arrow: HTMLDivElement;
   onMount(async () => {
     let { x, y } = await computePosition(button, tooltip, {
       placement: "top",
@@ -30,6 +31,7 @@
   </button>
   <div id="button-tooltip" class:tooltip role="tooltip" bind:this={tooltip}>
     My tooltip with more content
+    <div class="arrow" bind:this={arrow} />
   </div>
 </main>
 
