@@ -45,10 +45,26 @@
       [staticSide]: "-4px",
     });
   }
+  function showTooltip() {
+    tooltip.style.display = "block";
+    update();
+  }
+
+  function hideTooltip() {
+    tooltip.style.display = "";
+  }
 </script>
 
 <main>
-  <button class:button bind:this={button} aria-labelledby="button-tooltip">
+  <button
+    on:mouseenter={showTooltip}
+    on:mouseleave={hideTooltip}
+    on:focus={showTooltip}
+    on:blur={hideTooltip}
+    class:button
+    bind:this={button}
+    aria-labelledby="button-tooltip"
+  >
     My Button
   </button>
   <div id="button-tooltip" class:tooltip role="tooltip" bind:this={tooltip}>
