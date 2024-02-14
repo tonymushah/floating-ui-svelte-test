@@ -12,7 +12,7 @@
       button,
       tooltip,
       {
-        placement: "top",
+        placement: "left",
         middleware: [
           offset(6),
           flip(),
@@ -70,6 +70,7 @@
     font-size: medium;
   }
   .tooltip {
+    display: none;
     background: #222;
     color: white;
     font-weight: bold;
