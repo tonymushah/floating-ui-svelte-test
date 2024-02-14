@@ -10,11 +10,11 @@
     let { x, y } = await computePosition(button, tooltip, {
       placement: "top",
       middleware: [
+        offset(6),
         flip(),
         shift({
           padding: 5,
         }),
-        offset(6),
       ],
     });
     Object.assign(tooltip.style, {
