@@ -4,11 +4,12 @@
 </script>
 
 <main>
-  <button bind:this={button}>
+  <button class:button bind:this={button} aria-labelledby="button-tooltip">
     My Button
   </button>
-  <div role="tooltip" bind:this={tooltip}>My tooltip</div>
+  <div id="button-tooltip" class:tooltip role="tooltip" bind:this={tooltip}>My tooltip</div>
 </main>
 
 <style lang="scss">
+  
 </style>
