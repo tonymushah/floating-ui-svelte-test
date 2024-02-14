@@ -8,6 +8,9 @@ dependencies:
   '@floating-ui/dom':
     specifier: ^1.6.3
     version: 1.6.3
+  '@fontsource/poppins':
+    specifier: ^5.0.8
+    version: 5.0.8
   sass:
     specifier: ^1.70.0
     version: 1.70.0
@@ -270,6 +273,10 @@ packages:
 
   /@floating-ui/utils@0.2.1:
     resolution: {integrity: sha512-9TANp6GPoMtYzQdt54kfAyMmz1+osLlXdg2ENroU7zzrtflTLrrC/lgrIfaSe+Wu0b89GKccT7vxXA0MoAIO+Q==}
+    dev: false
+
+  /@fontsource/poppins@5.0.8:
+    resolution: {integrity: sha512-P8owfYWluoUY5Nyzk4gT/L6LmLmseP6ezFWhj6VBUa5pRIdnCvNJpoQ6i/vhekjtJOfqX6nKlB+LCttoUl2GQQ==}
     dev: false
 
   /@jridgewell/gen-mapping@0.3.3:
