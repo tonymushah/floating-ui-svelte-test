@@ -9,7 +9,12 @@
   onMount(async () => {
     let { x, y } = await computePosition(button, tooltip, {
       placement: "top",
-      middleware: [flip(), shift()],
+      middleware: [
+        flip(),
+        shift({
+          padding: 5,
+        }),
+      ],
     });
     Object.assign(tooltip.style, {
       left: `${x}px`,
