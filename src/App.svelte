@@ -5,7 +5,9 @@
   let button: HTMLButtonElement;
   let tooltip: HTMLDivElement;
   onMount(async () => {
-    let { x, y } = await computePosition(button, tooltip);
+    let { x, y } = await computePosition(button, tooltip, {
+      placement: "right",
+    });
     Object.assign(tooltip.style, {
       left: `${x}px`,
       top: `${y}px`,
