@@ -62,4 +62,11 @@
   main {
     font-family: "Poppins", sans-serif;
   }
+  .arrow {
+    position: absolute;
+    background: #222;
+    width: 8px;
+    height: 8px;
+    transform: rotate(45deg);
+  }
 </style>
