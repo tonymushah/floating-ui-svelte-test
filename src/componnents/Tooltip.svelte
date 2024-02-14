@@ -7,7 +7,7 @@
   let button: HTMLButtonElement;
   let tooltip: HTMLDivElement;
   let arrowElement: HTMLDivElement;
-  onMount(async () => {
+  async function update() {
     const { x, y, placement, middlewareData } = await computePosition(
       button,
       tooltip,
@@ -44,7 +44,7 @@
       bottom: "",
       [staticSide]: "-4px",
     });
-  });
+  }
 </script>
 
 <main>
