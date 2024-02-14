@@ -1,7 +1,16 @@
 <script lang="ts">
+  import { computePosition } from "@floating-ui/dom";
   import "@fontsource/poppins/devanagari.css";
+  import { onMount } from "svelte";
   let button: HTMLButtonElement;
   let tooltip: HTMLDivElement;
+  onMount(async () => {
+    let { x, y } = await computePosition(button, tooltip);
+    Object.assign(tooltip.style, {
+      left: `${x}px`,
+      top: `${y}px`,
+    });
+  });
 </script>
 
 <main>
