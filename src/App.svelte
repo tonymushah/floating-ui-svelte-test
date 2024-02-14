@@ -1,5 +1,6 @@
 <script lang="ts">
   import { flip } from "@floating-ui/dom";
+  import { shift } from "@floating-ui/dom";
   import { computePosition } from "@floating-ui/dom";
   import "@fontsource/poppins/devanagari.css";
   import { onMount } from "svelte";
@@ -8,7 +9,7 @@
   onMount(async () => {
     let { x, y } = await computePosition(button, tooltip, {
       placement: "top",
-      middleware: [flip()],
+      middleware: [flip(), shift()],
     });
     Object.assign(tooltip.style, {
       left: `${x}px`,
